@@ -1,4 +1,4 @@
-// pages/life/clothes.js
+// pages/life/clothes/list.js
 Page({
 
   /**

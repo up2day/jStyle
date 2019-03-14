@@ -1,13 +1,15 @@
 {
   "pages":[
     "pages/index/index",
-<<<<<<< HEAD
     "pages/logs/logs",
-    "pages/life/clothes",
-    "pages/travel/list"
-=======
-    "pages/logs/logs"
->>>>>>> bef669e404db4216471ace8994a46d7c920455b1
+    "pages/life/clothes/list",
+    "pages/life/clothes/newItem",
+    "pages/life/clothes/editItem",
+    "pages/life/clothes/detailItem",
+    "pages/life/travel/list",
+    "pages/life/travel/newItem",
+    "pages/life/travel/editItem",
+    "pages/life/travel/detailItem"
   ],
   "window":{
     "backgroundTextStyle":"light",

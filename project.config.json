@@ -14,11 +14,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.6.2",
 	"appid": "wx9d4f07910c677dd1",
-<<<<<<< HEAD
-	"projectname": "%E7%AE%80",
-=======
 	"projectname": "jstyle",
->>>>>>> bef669e404db4216471ace8994a46d7c920455b1
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
