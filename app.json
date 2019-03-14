@@ -1,12 +1,15 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/travel/travel",
-    "pages/jian/jian",
-    "pages/target/target",
-    "pages/luck/luck",
-    "pages/logs/logs"
-
+    "pages/logs/logs",
+    "pages/life/clothes/list",
+    "pages/life/clothes/newItem",
+    "pages/life/clothes/editItem",
+    "pages/life/clothes/detailItem",
+    "pages/life/travel/list",
+    "pages/life/travel/newItem",
+    "pages/life/travel/editItem",
+    "pages/life/travel/detailItem"
   ],
   "window":{
     "backgroundTextStyle":"light",
