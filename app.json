@@ -1,9 +1,13 @@
 {
   "pages":[
     "pages/index/index",
+<<<<<<< HEAD
     "pages/logs/logs",
     "pages/life/clothes",
     "pages/travel/list"
+=======
+    "pages/logs/logs"
+>>>>>>> bef669e404db4216471ace8994a46d7c920455b1
   ],
   "window":{
     "backgroundTextStyle":"light",
