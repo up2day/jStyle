@@ -1,7 +1,12 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/travel/travel",
+    "pages/jian/jian",
+    "pages/target/target",
+    "pages/luck/luck",
     "pages/logs/logs"
+
   ],
   "window":{
     "backgroundTextStyle":"light",

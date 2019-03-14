@@ -1,4 +1,7 @@
 <!--index.wxml-->
+<!-- <import src="../../component/tabbar/index.wxml" /> -->
+<!-- <template is="tabbar" data="{{tabbar}}"/> -->
+<v-tabar></v-tabar>
 <view class="container">
   <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
