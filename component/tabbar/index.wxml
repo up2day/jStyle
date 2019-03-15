@@ -1,9 +1,16 @@
-<view class="tabbar_box" style="background-color:{{tabbar.backgroundColor}}; border-top-color:{{tabbar.borderStyle}}; {{tabbar.position == 'top' ? 'top:0' : 'bottom:0'}}">
+<!-- <view class="tabbar_box" style="background-color:{{tabbar.backgroundColor}}; border-top-color:{{tabbar.borderStyle}}; {{tabbar.position == 'top' ? 'top:0' : 'bottom:0'}}">
   <block wx:for="{{tabbar.list}}" wx:for-item="item" wx:key="index">
     <navigator class="tabbar_nav" url="{{item.pagePath}}" style="width:{{1/tabbar.list.length*100}}%; " open-type="redirect">
       <text class='p-right iconfont icon-sousuo' wx:if="{{index==0}}"></text>
       <image class="tabbar_icon" src="{{item.selected ? item.selectedIconPath : item.iconPath}}"></image>
-      <text style="color:{{item.selected ? tabbar.selectedColor : tabbar.color}}">{{item.text}}</text>
+      <text  style="color:{{item.selected ? tabbar.selectedColor : tabbar.color}}">{{item.text}}</text>
     </navigator>
   </block>
+</view> -->
+
+<view class="comp-tabbar" style="border-color:{{tabbar.borderStyle}};background-color:{{tabbar.backgroundColor}}">
+  <view bindtap="redirectTo" data-taburl="{{item.pagePath}}" wx:for="{{tabbar.list}}" wx:key="index" class="tabbarItem" style="color:{{curRoute==item.pagePath?tabbar.selectedColor:tabbar.color}}">
+    <image class="icon" src="{{curRoute==item.pagePath?item.selectedIconPath:item.iconPath}}" mode="aspectFit"></image>
+    <view>{{item.text}}</view>
+  </view>
 </view>

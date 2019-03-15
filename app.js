@@ -34,7 +34,51 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    tabbar: {
+      color: "#242424",
+      selectedColor: "#fa8582",
+      backgroundColor: "#ffffff",
+      borderStyle: "#d7d7d7",
+      list: [
+        {
+          pagePath: "pages/index/index",
+          text: "生活",
+          iconPath: "/assets/images/icon-life.png",
+          selectedIconPath: "/assets/images/icon-life-on.png",
+          selected: true
+        },
+        {
+          pagePath: "pages/travel/list",
+          text: "旅行",
+          iconPath: "/assets/images/icon-travel.png",
+          selectedIconPath: "/assets/images/icon-travel-on.png",
+          selected: false
+        },
+        {
+          pagePath: "pages/jian/jian",
+          text: "",
+          iconPath: "/assets/images/icon-travel.png",
+          selectedIconPath: "/assets/images/icon-travel-on.png",
+          selected: false
+        },
+        {
+          pagePath: "pages/target/target",
+          text: "小目标",
+          iconPath: "/assets/images/icon-lucky.png",
+          selectedIconPath: "/assets/images/icon-lucky-on.png",
+          selected: false
+        },
+        {
+          pagePath: "pages/luck/luck",
+          text: "小确幸",
+          iconPath: "/assets/images/icon-lucky.png",
+          selectedIconPath: "/assets/images/icon-lucky-on.png",
+          selected: false
+        }
+      ],
+      position: "bottom"
+    },
   },
 
 })

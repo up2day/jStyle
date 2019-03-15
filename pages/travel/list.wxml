@@ -1,2 +1,3 @@
 <!--pages/travel/list.wxml-->
+<v-tabar></v-tabar>
 <text>pages/travel/list.wxml</text>
