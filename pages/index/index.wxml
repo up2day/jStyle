@@ -1,5 +1,8 @@
 <!--index.wxml-->
 <view class="welcome-page">
+  <image class="welcome-bg" src="../../assets/images/welcome-bg.jpg" mode="widthFix"></image>
+  <image class="welcome-birds" src="../../assets/images/welcome-birds.png"></image>
+  <image class="welcome-cloud" src="../../assets/images/welcome-cloud.png"></image>
   <view class="welcome-box">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
     <block wx:else>
