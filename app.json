@@ -2,14 +2,15 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/life/clothes/list",
-    "pages/life/clothes/newItem",
-    "pages/life/clothes/editItem",
-    "pages/life/clothes/detailItem",
-    "pages/life/travel/list",
-    "pages/life/travel/newItem",
-    "pages/life/travel/editItem",
-    "pages/life/travel/detailItem"
+    "pages/life/clothes/list/index",
+    "pages/life/clothes/newItem/index",
+    "pages/life/clothes/editItem/index",
+    "pages/life/clothes/detailItem/index",
+    "pages/life/travel/list/index",
+    "pages/life/travel/newItem/index",
+    "pages/life/travel/editItem/index",
+    "pages/life/travel/detailItem/index",
+    "pages/travel/list"
   ],
   "window":{
     "backgroundTextStyle":"light",
