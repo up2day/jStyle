@@ -7,7 +7,7 @@
     <view class="item">收费</view>
     <view class="item">收费</view>
   </view>
-  <view wx:for="{{list}}" bindtap="navbar" data-path="{{item.path}}" data-idx="{{index}}" class="{{currentIndex==index ? 'current': ''}} {{index==2 && 'avatar-wrapper'}}">
+  <view wx:for="{{list}}" wx:key="index" bindtap="navbar" data-path="{{item.path}}" data-idx="{{index}}" class="{{currentIndex==index ? 'current': ''}} {{index==2 && 'avatar-wrapper'}}">
     <view wx:if="{{index==2}}" class="avatar">
       <button class="userinfo" wx:if="{{!hasUserInfo}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"><image class="img avatar" src="{{avatarUrl}}" mode="cover"></image></button>
     <block wx:else>
