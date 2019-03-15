@@ -1,17 +1,6 @@
 //app.js
 App({
   onLaunch: function () {
-    // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
-
-    // 登录
-    wx.login({
-      success: res => {
-        // 发送 res.code 到后台换取 openId, sessionKey, unionId
-      }
-    })
     // 获取用户信息
     wx.getSetting({
       success: res => {
@@ -36,50 +25,6 @@ App({
 
   globalData: {
     userInfo: null,
-    tabbar: {
-      color: "#242424",
-      selectedColor: "#fa8582",
-      backgroundColor: "#ffffff",
-      borderStyle: "#d7d7d7",
-      list: [
-        {
-          pagePath: "pages/index/index",
-          text: "生活",
-          iconPath: "/assets/images/icon-life.png",
-          selectedIconPath: "/assets/images/icon-life-on.png",
-          selected: true
-        },
-        {
-          pagePath: "pages/travel/list/index",
-          text: "旅行",
-          iconPath: "/assets/images/icon-travel.png",
-          selectedIconPath: "/assets/images/icon-travel-on.png",
-          selected: false
-        },
-        {
-          pagePath: "pages/jian/jian",
-          text: "",
-          iconPath: "/assets/images/icon-travel.png",
-          selectedIconPath: "/assets/images/icon-travel.png",
-          selected: false
-        },
-        {
-          pagePath: "pages/targets/list/index",
-          text: "小目标",
-          iconPath: "/assets/images/icon-lucky.png",
-          selectedIconPath: "/assets/images/icon-lucky-on.png",
-          selected: false
-        },
-        {
-          pagePath: "pages/lucky/list/index",
-          text: "小确幸",
-          iconPath: "/assets/images/icon-lucky.png",
-          selectedIconPath: "/assets/images/icon-lucky-on.png",
-          selected: false
-        }
-      ],
-      position: "bottom"
-    },
   },
 
 })
