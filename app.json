@@ -35,7 +35,11 @@
     "pages/lucky/list/index",
     "pages/lucky/newItem/index",
     "pages/lucky/editItem/index",
-    "pages/lucky/detailItem/index"
+    "pages/lucky/detailItem/index",
+    "pages/mine/index/index",
+    "pages/mine/friends/index",
+    "pages/mine/qna/index",
+    "pages/mine/logout/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
