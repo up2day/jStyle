@@ -1,5 +1,4 @@
 <!--index.wxml-->
-<<<<<<< HEAD
 <view class="welcome-page">
   <view class="welcome-box">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
