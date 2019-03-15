@@ -8,3 +8,4 @@
     </block>
   </view>
 </view>
+<v-tab current-index="{{idx}}" />

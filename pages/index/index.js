@@ -5,6 +5,7 @@ const app = getApp()
 Page({
   data: {
     idx: '0',
+    
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -44,10 +45,6 @@ Page({
         }
       })
     }
-    //调用app中的函数
-    // app.changeTabBar();
-    // changeBar()
->>>>>>> 6087d2d609e2a9bd781a03f1d7d0df817371292c
   },
   getUserInfo: function (e) {
     console.log(e)

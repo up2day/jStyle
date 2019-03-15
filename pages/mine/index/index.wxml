@@ -1,3 +1,3 @@
 <!--pages/mine/index/index.wxml-->
 <text>pages/mine/index/index.wxml</text>
-<v-tab />
+<v-tab current-index="{{idx}}" />
