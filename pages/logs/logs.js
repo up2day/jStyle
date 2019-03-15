@@ -3,6 +3,7 @@ const util = require('../../utils/util.js')
 
 Page({
   data: {
+    idx: '1',
     logs: []
   },
   onLoad: function () {
