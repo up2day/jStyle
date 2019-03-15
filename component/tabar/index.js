@@ -17,38 +17,38 @@ Component({
   data: {
     showFlag: true,
     hasUserInfo: false,
-    avatarUrl: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=950335190,3492977720&fm=173&app=25&f=JPEG?w=218&h=146&s=4F854986C85A3CDE19E266A80300E00C',
+    avatarUrl: '../../assets/images/icon-life.png',
     list: [
       {
-        label: '导航',
-        src: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=950335190,3492977720&fm=173&app=25&f=JPEG?w=218&h=146&s=4F854986C85A3CDE19E266A80300E00C',
-        selected: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=48227114,3405896183&fm=173&app=49&f=JPEG?w=218&h=146&s=FD934B9A0073A99A6024F111030070ED',
+        label: '生活',
+        src: '../../assets/images/icon-life.png',
+        selected: '../../assets/images/icon-life-on.png',
         path: '/pages/index/index'
       },
       {
-        label: '导航',
-        src: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=950335190,3492977720&fm=173&app=25&f=JPEG?w=218&h=146&s=4F854986C85A3CDE19E266A80300E00C',
-        selected: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=48227114,3405896183&fm=173&app=49&f=JPEG?w=218&h=146&s=FD934B9A0073A99A6024F111030070ED',
-        path: '/pages/logs/logs'
+        label: '旅行',
+        src: '../../assets/images/icon-travel.png',
+        selected: '../../assets/images/icon-travel-on.png',
+        path: '/pages/travel/list/index'
       },
       {
-        label: '导航',
-        src: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=950335190,3492977720&fm=173&app=25&f=JPEG?w=218&h=146&s=4F854986C85A3CDE19E266A80300E00C',
-        selected: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=48227114,3405896183&fm=173&app=49&f=JPEG?w=218&h=146&s=FD934B9A0073A99A6024F111030070ED',
+        label: '',
+        src: '',
+        selected: '',
         path: '/pages/mine/index/index'
       },
       {
-        label: '导航',
-        src: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=950335190,3492977720&fm=173&app=25&f=JPEG?w=218&h=146&s=4F854986C85A3CDE19E266A80300E00C',
-        selected: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=48227114,3405896183&fm=173&app=49&f=JPEG?w=218&h=146&s=FD934B9A0073A99A6024F111030070ED',
-        path: ''
+        label: '小目标',
+        src: '../../assets/images/icon-target.png',
+        selected: '../../assets/images/icon-target-on.png',
+        path: '/pages/targets/list/index'
       },
       {
-        label: '导航',
-        src: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=950335190,3492977720&fm=173&app=25&f=JPEG?w=218&h=146&s=4F854986C85A3CDE19E266A80300E00C',
-        selected: 'https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=48227114,3405896183&fm=173&app=49&f=JPEG?w=218&h=146&s=FD934B9A0073A99A6024F111030070ED',
-        path: ''
-      }
+        label: '小确幸',
+        src: '../../assets/images/icon-lucky.png',
+        selected: '../../assets/images/icon-lucky-on.png',
+        path: '/pages/lucky/list/index'
+      },
     ]
   },
   lifetimes: {

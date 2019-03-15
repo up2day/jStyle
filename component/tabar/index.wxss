@@ -13,9 +13,10 @@
   text-align: center;
 }
 .img{
-  width: 80rpx;
-  height: 80rpx;
+  width: 70rpx;
+  height: 70rpx;
   display: block;
+  margin: 0 auto;
 }
 .avatar-wrapper{
   position: relative;

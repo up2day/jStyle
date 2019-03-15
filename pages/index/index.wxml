@@ -1,4 +1,3 @@
 <!--index.wxml-->
 <view>生活</view>
-<v-tab></v-tab>
-
+<v-tab current-index="{{idx}}" />
