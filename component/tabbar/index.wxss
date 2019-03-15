@@ -69,13 +69,26 @@
   width:50rpx;
   height:50rpx;
 }
-.tabbarItem:nth-child(3) image{ 
+.tabbarItem:nth-child(4) image{ 
     position:relative;
     top:-32rpx;
     width:80rpx;
     height:80rpx;
 }
-.tabbarItem:nth-child(3) text{  
+.tabbarItem:nth-child(4) text{  
     position:relative; 
     top:-32rpx;
+}
+.selection{
+  position: absolute;
+  top:-310rpx
+}
+.selection view{
+  color: black;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0 50rpx;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
 }

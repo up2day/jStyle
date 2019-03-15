@@ -21,7 +21,7 @@ App({
             success: res => {
               // 可以将 res 发送给后台解码出 unionId
               this.globalData.userInfo = res.userInfo
-
+              wx.setStorageSync('userInfo', this.globalData.userInfo)
               // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
               // 所以此处加入 callback 以防止这种情况
               if (this.userInfoReadyCallback) {
@@ -33,6 +33,7 @@ App({
       }
     })
   },
+
   globalData: {
     userInfo: null,
     tabbar: {
@@ -49,7 +50,7 @@ App({
           selected: true
         },
         {
-          pagePath: "pages/travel/list",
+          pagePath: "pages/travel/list/index",
           text: "旅行",
           iconPath: "/assets/images/icon-travel.png",
           selectedIconPath: "/assets/images/icon-travel-on.png",
@@ -59,18 +60,18 @@ App({
           pagePath: "pages/jian/jian",
           text: "",
           iconPath: "/assets/images/icon-travel.png",
-          selectedIconPath: "/assets/images/icon-travel-on.png",
+          selectedIconPath: "/assets/images/icon-travel.png",
           selected: false
         },
         {
-          pagePath: "pages/target/target",
+          pagePath: "pages/targets/list/index",
           text: "小目标",
           iconPath: "/assets/images/icon-lucky.png",
           selectedIconPath: "/assets/images/icon-lucky-on.png",
           selected: false
         },
         {
-          pagePath: "pages/luck/luck",
+          pagePath: "pages/lucky/list/index",
           text: "小确幸",
           iconPath: "/assets/images/icon-lucky.png",
           selectedIconPath: "/assets/images/icon-lucky-on.png",

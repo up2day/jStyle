@@ -9,7 +9,15 @@
 </view> -->
 
 <view class="comp-tabbar" style="border-color:{{tabbar.borderStyle}};background-color:{{tabbar.backgroundColor}}">
-  <view bindtap="redirectTo" data-taburl="{{item.pagePath}}" wx:for="{{tabbar.list}}" wx:key="index" class="tabbarItem" style="color:{{curRoute==item.pagePath?tabbar.selectedColor:tabbar.color}}">
+  <view class='selection' hidden="{{showflag}}">
+    <view>衣饰</view>
+    <view>食谱</view>
+    <view>住所</view>
+    <view>出行</view>
+    <view>账本</view>
+    <view>查账</view>
+  </view>
+  <view bindtap="redirectTo" data-taburl="{{item.pagePath}}" wx:for="{{tabbar.list}}" wx:key="index" class="tabbarItem" data-idx='{{index}}' style="color:{{curRoute==item.pagePath?tabbar.selectedColor:tabbar.color}}">
     <image class="icon" src="{{curRoute==item.pagePath?item.selectedIconPath:item.iconPath}}" mode="aspectFit"></image>
     <view>{{item.text}}</view>
   </view>

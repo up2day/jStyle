@@ -11,15 +11,22 @@ Component({
    */
   data: {
     tabbar:{},
-    curRoute:''
+    showflag: true,
+    curRoute:'',
+    userInfo:''
     
   },
   lifetimes: {
     attached() {
-      // console.log(1)
-      // this.changeTabBar()
       // 在组件实例进入页面节点树时执行
       this.data.tabbar = getApp().globalData.tabbar;
+      this.data.userInfo =wx.getStorageSync('userInfo') ;
+      console.log(this.data.tabbar,'2')
+      console.log(this.data.userInfo,'3')
+      this.data.tabbar.list[2].iconPath = this.data.userInfo.avatarUrl
+      // this.setData({
+
+      // })
       let pages = getCurrentPages();
       this.data.curRoute = pages[pages.length - 1].route;
       this.setData(this.data)
@@ -32,33 +39,18 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    // changeTabBar() {
-    //   var _curPageArr = getCurrentPages();
-    //   console.log(_curPageArr,'w')
-    //   var _curPage = _curPageArr[_curPageArr.length - 1];
-    //   var _pagePath = _curPage.__route__;
-    //   if (_pagePath.indexOf('/') != 0) {
-    //     _pagePath = '/' + _pagePath;
-    //   }
-    //   var tabBar = this.data.tabbar;
-    //   for (var i = 0; i < tabBar.list.length; i++) {
-    //     console.log(_pagePath + '--' + tabBar.list[i].pagePath)
-    //     tabBar.list[i].selected = false;
-    //     if (tabBar.list[i].pagePath == _pagePath) {
-    //       tabBar.list[i].selected = true;//根据页面地址设置当前页面状态  
-    //     }
-    //   }
-    //   this.triggerEvent('changebar')
-    //   _curPage.setData({
-    //     tabbar: tabBar
-    //   });
-    // }
     redirectTo(e) {
       let taburl = e.currentTarget.dataset.taburl;
+      let idx = e.currentTarget.dataset.idx
+      if (idx == 0 && taburl == this.data.curRoute){
+        this.setData({
+          showflag: !this.data.showflag
+        })
+      }
       if (taburl == this.data.curRoute) return
       wx.redirectTo({
         url: "/" + taburl
       })
-    },
+    }
   }
 })

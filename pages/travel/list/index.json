@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "v-tabar": "../../../component/tabbar/index"
+  }
+}
