@@ -1,4 +1,4 @@
-// pages/life/searching/yearly/index.js
+// pages/life/accountbook/yearly/index.js
 Page({
 
   /**
