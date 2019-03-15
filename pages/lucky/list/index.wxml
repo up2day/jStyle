@@ -1,3 +1,4 @@
 <!--pages/lucky/list/index.wxml-->
-<text>pages/lucky/list/index.wxml</text>
-<v-tabar></v-tabar>
+<text>小确幸</text>
+
+<v-tab current-index="{{idx}}" />

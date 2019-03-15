@@ -1,5 +1,6 @@
 <!--index.wxml-->
-<view class="welcome-page">
+
+<!-- <view class="welcome-page">
   <image class="welcome-bg" src="../../assets/images/welcome-bg.jpg" mode="widthFix"></image>
   <image class="welcome-birds" src="../../assets/images/welcome-birds.png"></image>
   <image class="welcome-cloud" src="../../assets/images/welcome-cloud.png"></image>
@@ -10,7 +11,8 @@
       <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     </block>
   </view>
-  <!-- <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view> -->
-</view>
+</view> -->
+
+<view>生活</view>
+<v-tab current-index="{{idx}}" />
+
