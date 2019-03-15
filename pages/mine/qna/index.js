@@ -1,4 +1,4 @@
-// pages/life/searching/yearly/index.js
+// pages/mine/qna/index.js
 Page({
 
   /**
