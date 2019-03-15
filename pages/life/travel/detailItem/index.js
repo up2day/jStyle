@@ -1,4 +1,4 @@
-// pages/life/clothes/detailItem.js
+// pages/life/travel/detailItem/index.js
 Page({
 
   /**
