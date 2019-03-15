@@ -1,6 +1,6 @@
 
 {
   "usingComponents": {
-    "v-tabar": "../../component/tabbar/index"
+    "v-tab": "../../component/tabar/index"
   }
 }
