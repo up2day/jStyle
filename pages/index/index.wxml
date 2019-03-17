@@ -1,7 +1,21 @@
 <!--index.wxml-->
+<view>生活</view>
 <view>
   <view class="aside-wrapper">
     <v-aside />
   </view>
 </view>
 <v-tab current-index="{{idx}}" />
+
+<!-- <view class="welcome-page">
+  <image class="welcome-bg" src="../../assets/images/welcome-bg.jpg" mode="widthFix"></image>
+  <image class="welcome-birds" src="../../assets/images/welcome-birds.png"></image>
+  <image class="welcome-cloud" src="../../assets/images/welcome-cloud.png"></image>
+  <view class="welcome-box">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+</view> -->

@@ -1,2 +1,21 @@
 <!--pages/life/clothes/list/index.wxml-->
-<text>pages/life/clothes/list/index.wxml</text>
+<view class='bj'>
+  <view class='clothes-zt'>
+    <view class='layout-left'></view>
+    <view class='layout-right'>
+        <view class='clothes-list'>
+          <view class='clothes-img-wrapper'>
+            <image class="clothes-img" mode="widthFix" src='{{src}}'></image>
+          </view>
+          <text class='font-14'>文艺范纯棉连衣裙女中长款夏季短袖c纯色女...</text>
+        </view>
+        <view class='clothes-list'>
+          <view class='clothes-img-wrapper'>
+            <image class="clothes-img" mode="widthFix" src='{{src}}'></image>
+          </view>
+          <text class='font-14'>文艺范纯棉连衣裙女中长款夏季短袖c纯色女...</text>
+        </view>
+        <view class='clothes-list'></view>
+    </view>
+  </view>
+</view>

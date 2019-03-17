@@ -6,18 +6,50 @@
   bottom: 0;
   background: #f3f3f3;
   width: 100rpx;
-
 }
-
 .welcome-page {
-  display: flex;
-  align-items: flex-end;
+  position: relative;
   width: 100vw;
   height: 100vh;
-  background: #5b7bbd;
+  background-color: #355491;
+  /* background-image: url(../../assets/images/welcome-bg.jpg);
+  background-position: right top;
+  background-repeat: no-repeat; */
   color: #ffffff;
 }
 
+.welcome-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.welcome-birds {
+  position: absolute;
+  top: 11%;
+  left: 7%;
+  width: 129rpx;
+  height: 97rpx;
+}
+
+.welcome-cloud {
+  position: absolute;
+  top: 5%;
+  right: 6%;
+  width: 123rpx;
+  height: 42rpx;
+}
+
+.welcome-box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
 
 .userinfo-avatar {
   width: 128rpx;
