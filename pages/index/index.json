@@ -2,6 +2,9 @@
 {
   "usingComponents": {
     "v-tab": "../../component/tabar/index",
-    "v-aside": "../../component/aside/index"
+    "v-aside": "../../component/aside/index",
+    "v-food-picker": "../../component/foodpicker/index",
+    "v-star": "../../component/star/index",
+    "v-count": "../../component/count/index"
   }
 }

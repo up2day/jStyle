@@ -1,4 +1,12 @@
 /* component/aside/index.wxss */
+.aside{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #f3f3f3;
+  width: 100rpx;
+}
 .container{
   display: flex;
   flex-direction: column;

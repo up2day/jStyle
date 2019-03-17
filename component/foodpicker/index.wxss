@@ -1,0 +1,5 @@
+/* component/foodpicker/index.wxss */
+.container{
+  color: #181818;
+  font-size: 28rpx;
+}

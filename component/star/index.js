@@ -4,7 +4,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-
+    routineFlag: {
+      type: String,
+      value: '0'
+    }
   },
 
   /**
@@ -18,6 +21,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    routine(){
+      this.triggerEvent('breakfast', this.properties.routineFlag)
+    }
   }
 })

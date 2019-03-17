@@ -1,12 +1,120 @@
 /**index.wxss**/
-.aside-wrapper{
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background: #f3f3f3;
-  width: 100rpx;
+/* 李向群 */
+page{
+  background: #fafafa;
 }
+.main{
+  padding: 30rpx 30rpx 30rpx 130rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main-top{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.add{
+  color: #556fb5;
+  font-size: 32rpx;
+}
+.item{
+  background: #fff;
+  margin: 24rpx 0 0;
+}
+.item-content{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #f0f0f0;
+}
+.item-pic{
+  flex: 0 0 160rpx;
+  display: block;
+  width: 160rpx;
+  height: 160rpx;
+}
+.item-main{
+  padding: 20rpx 24rpx 16rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.item-title{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  line-height: 1;
+  color: #181818;
+  font-size: 32rpx;
+}
+.item-num{
+  display: inline-flex;
+  padding: 2rpx 0;
+  margin: 0 0 0 8rpx;
+  min-width: 32rpx;
+  justify-content: center;
+  color: #fff;
+  background: #ec6941;
+  font-size: 24rpx;
+  border-radius: 2px;
+}
+.item-desc{
+  line-height: 36rpx;
+  font-size: 28rpx;
+  color: #6f6f6f;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.item-opt{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rpx 10rpx 10rpx 0;
+}
+.item-opt-left{
+  display: flex;
+  align-items: center;
+}
+.icon-shanchu{
+  color: #de9d89;
+  padding: 0 10rpx;
+  font-size: 28rpx;
+}
+.item-opt-right{
+  display: flex;
+  align-items: center;
+  color: #999;
+}
+.item-opt-cook,.item-opt-dinner{
+  margin: 0 0 0 10rpx;
+  padding: 0 8rpx;
+  line-height: 34rpx;
+  height: 34rpx;
+  border-radius: 3px;
+  font-size: 26rpx;
+  white-space: nowrap;
+}
+.item-opt-cook{
+  background: #e9fdf2;
+  color: #428862;
+  border: 1rpx solid #7cbf9b;
+}
+.item-opt-dinner{
+  background: #fef1ed;
+  color: #ae4a2c;
+  border: 1rpx solid #c2826c;
+}
+.item-opt-cap{
+  margin: 0 4rpx 0 0;
+  font-size: 26rpx;
+}
+
+
+
 .welcome-page {
   position: relative;
   width: 100vw;

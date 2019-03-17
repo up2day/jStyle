@@ -1,2 +1,5 @@
 <!--component/star/index.wxml-->
-<text>component/star/index.wxml</text>
+<view class="container {{routineFlag==1 ? 'on': ''}}" bindtap="routine">
+  <image class="pic" src="{{routineFlag==1 ? '../../assets/images/star_yellow.png': '../../assets/images/star_gray.png'}}"></image>
+  例行早餐
+</view>

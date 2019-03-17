@@ -1,8 +1,34 @@
 <!--index.wxml-->
-<view>生活</view>
-<view>
-  <view class="aside-wrapper">
-    <v-aside />
+<view class="container">
+  <v-aside />
+  <view class="main">
+    <view class="main-top">
+      <v-food-picker bind:picker="getFoodPicker" />
+      <view class="add" bindtap="addRecipe">+新食谱</view>
+    </view>
+    <view wx:for="{{list}}" class="item" wx:key="index">
+      <view class="item-content">
+        <image class="item-pic" src="{{item.src}}"></image>
+        <view class="item-main">
+          <view class="item-title">
+            {{item.title}}<text class="item-num">{{item.count}}</text>
+          </view>
+          <view class="item-desc">{{item.desc}}</view>
+        </view>
+      </view>
+      <view class="item-opt">
+        <view class="item-opt-left">
+          <text class="iconfont icon-shanchu" data-id="{{item.id}}" bindtap="deleteItem"></text>
+          <v-star routine-flag="{{item.routine}}" data-idx="{{index}}" bind:breakfast="changeRoutine" />
+        </view>
+        <view class="item-opt-right">
+          <text class="item-opt-cap">份量</text>
+          <v-count num="{{item.num}}" bind:minus="minus" bind:plus="plus" data-id="{{item.id}}" data-num="{{item.num}}" />
+          <view class="item-opt-cook" bindtap="cook">做饭</view>
+          <view class="item-opt-dinner" bindtap="dinner">订餐</view>
+        </view>
+      </view>
+    </view>
   </view>
 </view>
 <v-tab current-index="{{idx}}" />

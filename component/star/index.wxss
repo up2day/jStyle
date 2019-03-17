@@ -1,1 +1,17 @@
 /* component/star/index.wxss */
+
+.container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #999999;
+  font-size: 26rpx;
+}
+.pic{
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+}
+.on{
+  color: #bd8f0a;
+}
