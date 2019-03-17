@@ -1,0 +1,15 @@
+/* component/aside/index.wxss */
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14rpx 0;
+}
+.aside-item{
+  padding: 16rpx 0;
+}
+.img{
+  width: 64rpx;
+  height: 54rpx;
+}

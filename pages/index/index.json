@@ -1,6 +1,7 @@
 
 {
   "usingComponents": {
-    "v-tab": "../../component/tabar/index"
+    "v-tab": "../../component/tabar/index",
+    "v-aside": "../../component/aside/index"
   }
 }

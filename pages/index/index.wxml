@@ -1,3 +1,7 @@
 <!--index.wxml-->
-<view>生活</view>
+<view>
+  <view class="aside-wrapper">
+    <v-aside />
+  </view>
+</view>
 <v-tab current-index="{{idx}}" />

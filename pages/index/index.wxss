@@ -1,5 +1,13 @@
 /**index.wxss**/
+.aside-wrapper{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #f3f3f3;
+  width: 100rpx;
 
+}
 
 .welcome-page {
   display: flex;

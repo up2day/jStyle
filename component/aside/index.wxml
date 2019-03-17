@@ -1,0 +1,5 @@
+<view class="container">
+  <view class="aside-item" wx:for="{{list}}" wx:key="index" bindtap="onJump">
+    <image class="img" src="{{item.src}}"></image>
+  </view>
+</view>
