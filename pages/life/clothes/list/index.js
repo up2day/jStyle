@@ -5,7 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-    src: '../../../../assets/productimg/pic-clothes01.png'
+    src: '../../../../assets/productimg/pic-clothes01.png',
+    list: [
+      {
+        id: 1,
+        title: '文艺范纯棉连衣裙女中长款夏季短袖c纯色女',
+        src: '../../../../assets/productimg/pic-clothes01.png',
+        price:'69.90',
+        path: ''
+      },
+      {
+        id: 2,
+        title: '阿迪达斯男鞋女鞋2019新款正品春季三叶草金标贝壳头板鞋小白鞋子',
+        src: '../../../../assets/productimg/pic-clothes02.png',
+        price: '300.00',
+        path: ''
+      }
+    ]
 
   },
 

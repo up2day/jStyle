@@ -1,21 +1,17 @@
 <!--pages/life/clothes/list/index.wxml-->
-<view class='bj'>
-  <view class='clothes-zt'>
-    <view class='layout-left'></view>
-    <view class='layout-right'>
-        <view class='clothes-list'>
-          <view class='clothes-img-wrapper'>
-            <image class="clothes-img" mode="widthFix" src='{{src}}'></image>
-          </view>
-          <text class='font-14'>文艺范纯棉连衣裙女中长款夏季短袖c纯色女...</text>
+  <view class='container'>
+    <v-aside />
+    <view class='main'>
+      <view class='main-top'></view>
+      <view class='clothes-item' wx:for="{{list}}" wx:key='index'>
+        <view class='clothes-img-wrapper'>
+          <image class="clothes-img" mode="widthFix" src='{{item.src}}'></image>
         </view>
-        <view class='clothes-list'>
-          <view class='clothes-img-wrapper'>
-            <image class="clothes-img" mode="widthFix" src='{{src}}'></image>
-          </view>
-          <text class='font-14'>文艺范纯棉连衣裙女中长款夏季短袖c纯色女...</text>
+        <text class='clothes-text'>{{item.title}}</text> 
+        <view class='clothes-operate'>
+          <view>￥<text class='font-pic'>{{item.price}}</text></view>
         </view>
-        <view class='clothes-list'></view>
+      </view>
     </view>
+    <v-tab />
   </view>
-</view>

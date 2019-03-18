@@ -1,25 +1,15 @@
 /* pages/life/clothes/list/index.wxss */
-.bj{
-  background: #eee;
-  height: 100%;
-  min-height: 500px;
+page{
+  background: #fafafa;
 }
-.clothes-zt {
-  display: flex;
-  flex-direction: row;
-  }
-.layout-left{
-  width: 100rpx;
-  background:#f3f3f3;
-  min-height: 500px;
+.main{
+  padding: 30rpx 40rpx 30rpx 140rpx;
 }
-.layout-right{
-  margin: 40rpx;
-  width: 100%;
+.main-top{
 }
-.clothes-list{
+.clothes-item{
   background: #fff;
-  height: 660rpx; 
+  max-height: 660rpx; 
   padding: 24rpx;
   margin-bottom: 20rpx;
   border: 1rpx solid #e5e5e5;
@@ -28,12 +18,22 @@
 .clothes-img-wrapper{
   max-height: 480rpx;
   margin-bottom:30rpx;
-
 }
 .clothes-img{
   width: 100%;
 }
-.font-14{
+.clothes-text{
+  display: block;
   font-size: 14px;
   color: #444;
+  max-width: 500rpx; 
+  overflow: hidden;     
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
+.clothes-operate{
+  border-top: 1rpx solid #e5e5e5;
+  padding-top: 20px;
+  margin-top: 20rpx;
+}
+.font-pic{color: red;}
