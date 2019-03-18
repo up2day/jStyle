@@ -31,9 +31,29 @@ page{
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.clothes-operate{
+.clothes-opt{
   border-top: 1rpx solid #e5e5e5;
-  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
   margin-top: 20rpx;
 }
 .font-pic{color: red;}
+
+.icon-shanchu{
+  color: #de9d89;
+  padding: 0 10rpx;
+  font-size: 32rpx;
+}
+
+.icon-gouwuche{
+  color: #78f2ca;
+  padding: 0 10rpx;
+  font-size: 32rpx;
+}
+.icon-fenxiang{
+  color: #7e8283;
+  padding: 0 10rpx;
+  font-size: 32rpx;
+}

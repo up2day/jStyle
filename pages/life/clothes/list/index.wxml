@@ -8,8 +8,15 @@
           <image class="clothes-img" mode="widthFix" src='{{item.src}}'></image>
         </view>
         <text class='clothes-text'>{{item.title}}</text> 
-        <view class='clothes-operate'>
-          <view>￥<text class='font-pic'>{{item.price}}</text></view>
+        <view class='clothes-opt'>
+          <view class='clothes-operate-left'>
+          ￥<text class='font-pic'>{{item.price}}</text>
+          </view>
+          <view class='clothes-operate-right'>
+            <text class="iconfont icon-shanchu"></text>
+            <text class="iconfont icon-gouwuche"></text>
+            <text class="iconfont icon-fenxiang"></text>
+          </view>
         </view>
       </view>
     </view>
