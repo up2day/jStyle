@@ -85,30 +85,6 @@ Page({
       }
     })
   },
-  // 修改数量
-  minus(e){
-    let num = parseInt(e.currentTarget.dataset.num)
-    let id = e.currentTarget.dataset.id
-    num--
-    this.changeCount(num, id)
-  },
-  plus(e){
-    let num = parseInt(e.currentTarget.dataset.num)
-    let id = e.currentTarget.dataset.id
-    num++
-    this.changeCount(num, id)
-  },
-  // 公共方法
-  changeCount(num, id){
-    this.data.list.forEach((item, index) => {
-      if (item.id == id) {
-        item.num = num
-      }
-    })
-    this.setData({
-      list: this.data.list
-    })
-  },
   // 点击做饭
   cook(){
     console.log('做饭弹层')

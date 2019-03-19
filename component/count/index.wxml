@@ -1,6 +1,6 @@
 <!--component/count/index.wxml-->
 <view class="container">
-  <text class="minus {{num>1 ? 'dark':''}}" bindtap="minus">-</text>
-  <input class="count" value="{{num}}"></input>
+  <text class="minus {{val>1 ? 'dark':''}}" bindtap="minus">-</text>
+  <input class="count" value="{{val}}"></input>
   <text class="plus" bindtap="plus">+</text>
 </view>

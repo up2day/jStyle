@@ -14,9 +14,15 @@ Component({
    * 组件的初始数据
    */
   data: {
-    
+    val: 1
   },
-
+  lifetimes: {
+    attached(){
+      this.setData({
+        val: this.properties.num
+      })
+    }
+  },
   /**
    * 组件的方法列表
    */
@@ -25,10 +31,16 @@ Component({
       if(this.properties.num <= 1){
         return
       }
-      this.triggerEvent('minus')
+      this.properties.num--
+      this.setData({
+        val: this.properties.num
+      })
     },
     plus(){
-      this.triggerEvent('plus')
+      this.properties.num++
+      this.setData({
+        val: this.properties.num
+      })
     }
   }
 })
