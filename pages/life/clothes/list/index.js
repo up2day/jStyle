@@ -5,7 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    src: '../../../../assets/productimg/pic-clothes01.png',
     list: [
       {
         id: 1,
@@ -21,10 +20,52 @@ Page({
         price: '300.00',
         path: ''
       }
-    ]
+    ],
+    array: ['全部', '衣柜', '草地'],
+    objectArray: [
+      {
+        id: 0,
+        name: '全部'
+      },
+      {
+        id: 1,
+        name: '衣柜'
+      },
+      {
+        id: 2,
+        name: '草地'
+      }
+    ],
+    index: 0
 
   },
-
+  bindPickerChange(e) {
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  deleteItem(e){
+    let _this = this
+    wx.showModal({
+      title: '提示',
+      content: '确认删除吗？',
+      success(res) {
+        if (res.confirm) {
+          let id = e.currentTarget.dataset.id
+          _this.data.list.forEach((item, index) => {
+            if (item.id == id) {
+              _this.data.list.splice(index, 1)
+            }
+          })
+          _this.setData({
+            list: _this.data.list
+          })
+        } else if (res.cancel) {
+          console.log('用户点击取消')
+        }
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
