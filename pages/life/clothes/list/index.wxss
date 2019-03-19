@@ -3,9 +3,14 @@ page{
   background: #fafafa;
 }
 .main{
-  padding: 30rpx 40rpx 30rpx 140rpx;
+  padding: 30rpx 40rpx 200rpx 140rpx;
 }
 .main-top{
+  height: 70rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .clothes-item{
   background: #fff;
@@ -55,5 +60,10 @@ page{
 .icon-fenxiang{
   color: #7e8283;
   padding: 0 10rpx;
+  font-size: 32rpx;
+}
+
+.add{
+  color: #556fb5;
   font-size: 32rpx;
 }

@@ -83,7 +83,7 @@ Component({
           break
       }
       console.log(data.multiIndex) // 选择的结果id
-      this.setData(data)
+      // this.setData(data)
     },
   }
 })

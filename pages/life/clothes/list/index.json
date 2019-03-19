@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "v-aside": "../../../../component/aside/index",
-    "v-tab": "../../../../component/tabar/index"
+    "v-tab": "../../../../component/tabar/index",
+    "v-food-picker": "../../../../component/foodpicker/index"
   }
 }

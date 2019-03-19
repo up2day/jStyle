@@ -2,7 +2,14 @@
   <view class='container'>
     <v-aside />
     <view class='main'>
-      <view class='main-top'></view>
+      <view class='main-top'>
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker add">
+           {{array[index]}}
+          </view>
+        </picker>
+        <view class="add" bindtap="addRecipe">+新食谱</view>
+      </view>
       <view class='clothes-item' wx:for="{{list}}" wx:key='index'>
         <view class='clothes-img-wrapper'>
           <image class="clothes-img" mode="widthFix" src='{{item.src}}'></image>
@@ -13,7 +20,7 @@
           ￥<text class='font-pic'>{{item.price}}</text>
           </view>
           <view class='clothes-operate-right'>
-            <text class="iconfont icon-shanchu"></text>
+            <text class="iconfont icon-shanchu" data-id="{{item.id}}" bindtap="deleteItem"></text>
             <text class="iconfont icon-gouwuche"></text>
             <text class="iconfont icon-fenxiang"></text>
           </view>
