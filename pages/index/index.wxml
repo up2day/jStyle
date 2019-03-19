@@ -6,6 +6,69 @@
       <v-food-picker bind:picker="getFoodPicker" />
       <view class="add" bindtap="addRecipe">+新食谱</view>
     </view>
+    <view class='main-content'>
+      <view class='content-first'>
+        <view>
+          <text class='icon-star-full iconfont'></text>
+          <text class='pl-10 font-title'>来一份例行早餐？</text>
+        </view>
+        <view class='menu pl-40' wx:for="{{breakfastList}}" wx:key="index">
+          <view>
+            <text decode="{{true}}">-&nbsp;{{item.name}}</text>
+          </view>
+          <view>
+            <text decode="{{true}}">¥&nbsp;</text>
+            <text class='font-red'>{{item.price}}</text>
+            <text decode="{{true}}">&nbsp;元</text>
+          </view>
+        </view>
+        <view class='nocie pl-40'>注：如果不选择其他食谱，系统将默认将“例行早餐”的费用记账到每日账本中。</view>
+      </view>
+      <view class='content-second'>
+        <view>
+          <text class='icon-star-empty iconfont'></text>
+          <text class='pl-10 font-title'>或者换个口味？</text>
+        </view>
+        <view class='menu pl-40' wx:for="{{breakfastList}}" wx:key="index">
+          <view>
+            <text decode="{{true}}">-&nbsp;{{item.name}}</text>
+          </view>
+          <view>
+            <text decode="{{true}}">¥&nbsp;</text>
+            <text class='font-red'>{{item.price}}</text>
+            <text decode="{{true}}">&nbsp;元</text>
+          </view>
+        </view>
+      </view>
+      <view class='content-third'>
+        <view>
+          <text class='icon-star-empty iconfont'></text>
+          <text class='pl-10 font-title'>或者尝试一下我们为你推荐的风味早餐？</text>
+        </view>
+        <view class='menu pl-40' wx:for="{{breakfastList}}" wx:key="index">
+          <view>
+            <text decode="{{true}}">-&nbsp;{{item.name}}</text>
+          </view>
+          <view>
+            <text decode="{{true}}">¥&nbsp;</text>
+            <text class='font-red'>{{item.price}}</text>
+            <text decode="{{true}}">&nbsp;元</text>
+          </view>
+        </view>
+      </view>
+      <!-- <view hidden='' bindtap=''>
+        <view><text class='icon-star-full iconfont'></text>收起</view>
+        <scroll-view class='adv' scroll-x>
+          <view wx:for="{{}}" wx:key="index"></view>
+              <image src='../../assets/images/car.png' class='img-wh'></image>
+              <image src='../../assets/images/car.png' class='img-wh'></image>
+              <image src='../../assets/images/car.png' class='img-wh'></image>
+              <image src='../../assets/images/car.png' class='img-wh'></image>          <view>
+              <image src='../../assets/images/car.png' class='img-wh'></image>
+          </view>
+        </scroll-view>
+      </view> -->
+    </view>
     <view wx:for="{{list}}" class="item" wx:key="index">
       <view class="item-content">
         <image class="item-pic" src="{{item.src}}"></image>

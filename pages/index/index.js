@@ -27,6 +27,18 @@ Page({
         routine: '0', // 1表示例行早餐，0表示不是例行早餐
       }
     ], 
+    breakfastList:[
+      {
+        index:0,
+        name:'皮蛋瘦肉粥（自制）',
+        price:4,
+      },
+      {
+        index: 1,
+        name: '煎蛋（自制）',
+        price: 1.5,
+      }
+    ]
   },
   onLoad: function () {},
   // 获取食物下拉

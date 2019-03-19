@@ -165,3 +165,40 @@ page{
   margin: 20rpx;
   border-radius: 50%;
 }
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+}
+
+.pl-10{
+  padding-left: 10rpx
+}
+.font-red{
+  color: red;
+  font-weight: 900
+}
+.pl-40{
+  padding-left: 40rpx;
+}
+.nocie{
+  margin-top: 30rpx;
+  color: pink;
+  font-size: 30rpx;
+}
+.content-first,.content-second{
+  margin-bottom: 40rpx
+}
+.font-title{
+  font-size: 30rpx;
+}
+.img-wh{
+  width: 100rpx;
+  height: 100rpx;
+}
+.adv{
+  /* display: flex; */
+  height: 100rpx;
+  overflow-x: hidden
+}
