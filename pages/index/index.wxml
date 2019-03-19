@@ -56,25 +56,32 @@
           </view>
         </view>
       </view>
-      <!-- <view hidden='' bindtap=''>
-        <view><text class='icon-star-full iconfont'></text>收起</view>
-        <scroll-view class='adv' scroll-x>
-          <view wx:for="{{}}" wx:key="index"></view>
-              <image src='../../assets/images/car.png' class='img-wh'></image>
-              <image src='../../assets/images/car.png' class='img-wh'></image>
-              <image src='../../assets/images/car.png' class='img-wh'></image>
-              <image src='../../assets/images/car.png' class='img-wh'></image>          <view>
-              <image src='../../assets/images/car.png' class='img-wh'></image>
-          </view>
+      <view>
+        <view bindtap='tagshow'>
+          <text class='{{flagshow?"icon-star-full":"icon-star-empty"}} iconfont'></text>
+          <text>{{flagshow?'展开':'收起'}}</text>
+        </view>
+        <scroll-view hidden='{{flagshow}}' class='adv' scroll-x>
+          <!-- <view wx:for="{{}}" wx:key="index"></view> -->
+          <image class='img-wh' src='../../assets/images/car.png' class='img-wh'></image>
+          <image class='img-wh' src='../../assets/images/car.png' class='img-wh'></image>
+          <image class='img-wh' src='../../assets/images/car.png' class='img-wh'></image>
+          <image class='img-wh' src='../../assets/images/car.png' class='img-wh'></image>
+          <image class='img-wh' src='../../assets/images/car.png' class='img-wh'></image>
+          <image class='img-wh' src='../../assets/images/car.png' class='img-wh'></image>
+          <image class='img-wh' src='../../assets/images/car.png' class='img-wh'></image>
+          <image class='img-wh' src='../../assets/images/car.png' class='img-wh'></image>
+
         </scroll-view>
-      </view> -->
+      </view>
     </view>
     <view wx:for="{{list}}" class="item" wx:key="index">
       <view class="item-content">
         <image class="item-pic" src="{{item.src}}"></image>
         <view class="item-main">
           <view class="item-title">
-            {{item.title}}<text class="item-num">{{item.count}}</text>
+            {{item.title}}
+            <text class="item-num">{{item.count}}</text>
           </view>
           <view class="item-desc">{{item.desc}}</view>
         </view>

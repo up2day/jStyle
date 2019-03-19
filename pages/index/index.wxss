@@ -165,7 +165,7 @@ page{
   margin: 20rpx;
   border-radius: 50%;
 }
-
+/* 郑斌龙 */
 .menu{
   display: flex;
   justify-content: space-between;
@@ -194,11 +194,11 @@ page{
   font-size: 30rpx;
 }
 .img-wh{
-  width: 100rpx;
-  height: 100rpx;
+  width: 125rpx;
+  height: 125rpx;
+  padding: 20rpx 0 20rpx 20rpx;
 }
 .adv{
-  /* display: flex; */
-  height: 100rpx;
-  overflow-x: hidden
+  white-space: nowrap;
 }
+/* 郑斌龙 */

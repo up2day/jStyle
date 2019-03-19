@@ -38,7 +38,8 @@ Page({
         name: '煎蛋（自制）',
         price: 1.5,
       }
-    ]
+    ],
+    flagshow:false
   },
   onLoad: function () {},
   // 获取食物下拉
@@ -104,5 +105,11 @@ Page({
   // 点击订餐
   dinner(){
     console.log('订餐弹层')
+  },
+  // 收起展开广告
+  tagshow(){
+    this.setData({
+      flagshow:!this.data.flagshow
+    })
   }
 })
